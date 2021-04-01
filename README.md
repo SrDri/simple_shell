@@ -48,8 +48,8 @@ This version of the shell has a collection of custom built-in commands along wit
 
 |   **File**    |  **Decription**                       |
 |---------------|---------------------------------------|
-|  `shell.h`	|  Header file: contains prototypes	|
-|  `shell.c`	|  Main file: contains main function and an interactive mode loop|
+|  `shell.h`	|  Header file: contains prototypes.	|
+|  `shell.c`	|  Main file: contains main function and an interactive mode loop.|
 
 ### Function & SysCalls
 `execve`, `exit`, `fork`, `free`, `getline`, `malloc`, `perror`, `wait`
