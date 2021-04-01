@@ -1,10 +1,11 @@
-# simple_shell
+# 0x16. C - Simple Shell
 
 ### Description
 This is a school project which goal is to mirror the sh command-line interpreter (shell), written by Ken Thompson in a limited scope.
 
 ### Authors
 Carlos Galeano
+
 Juan Jose Carabali
 
 ### Synopsis
