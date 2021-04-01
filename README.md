@@ -12,6 +12,9 @@ Juan Jose Carabali [Twitter](https://twitter.com/Juanjch_22) | [Email](juanjcara
 This version of the shell has a collection of custom built-in commands along with the functionality of running scripts in the the various paths on a given operating system.
 
 ### List of allowed functions and system calls
+<details><summary>LIST</summary>
+<p>
+
 - access (man 2 access)
 - chdir (man 2 chdir)
 - close (man 2 close)
@@ -44,13 +47,13 @@ This version of the shell has a collection of custom built-in commands along wit
 - wait4 (man 2 wait4)
 - write (man 2 write)
 
+</p>
+</details>
+
 ## Repo Contents
 
 |   **File**    |  **Decription**                       |
 |---------------|---------------------------------------|
-|  `shell.h`	|  Header file: contains prototypes.	|
-|  `shell.c`	|  Main file: contains main function and an interactive mode loop.|
-
-### Function & SysCalls
-`execve`, `exit`, `fork`, `free`, `getline`, `malloc`, `perror`, `wait`
+|  `shell.h`	|  Header file: contains prototypes	|
+|  `shell.c`	|  Main file: contains main function and an interactive mode loop|
 
