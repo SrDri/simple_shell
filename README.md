@@ -4,7 +4,7 @@
 This is a school project which goal is to mirror the sh command-line interpreter (shell), written by Ken Thompson in a limited scope.
 
 ### Authors
-Carlos Galeano [Twitter](https://twitter.com/CarlosG19285722) | [Email](correo)
+Carlos Galeano [Twitter](https://twitter.com/CarlosG19285722) | [Email](dnny419@gmail.com)
 
 Juan Jose Carabali [Twitter](https://twitter.com/Juanjch_22) | [Email](juanjcarabali@gmail.com)
 
