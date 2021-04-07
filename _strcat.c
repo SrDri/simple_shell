@@ -1,8 +1,9 @@
+#include "shell.h"
 /**
  * _strcat - concatenates two strings
  * @dest: destination string
  * @src: what to add to the destination string
- * Return: void
+ * Return: Nothing.
  */
 void _strcat(char *dest, const char *src)
 {
