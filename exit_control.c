@@ -10,7 +10,7 @@ void exit_control(char *line, ssize_t controller)
 {
 	if (_strcmp(line, "exit", 0, 3))
 	{
-		if (controller == -1)
+		if (controller == EOF)
 			write(1, "\n", 1);
 
 		exit(0);

@@ -1,4 +1,5 @@
 #include "shell.h"
+
 /**
  * _strcmp - compares two strings
  * @s1: first string to compare
@@ -6,7 +7,7 @@
  * @beg: beginning of the interval
  * @end: end of the interval
  * Return: the result of comparison between two sequences
- */
+*/
 
 bool _strcmp(const char *s1, const char *s2, int beg, int end)
 {
