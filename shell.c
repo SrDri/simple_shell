@@ -13,6 +13,8 @@ int main(void)
 			_prompt(1);
 
 		controller = getline(&line, &buf, stdin);
+
+		exit_control(line, controller);
 	}
 
 	free(line);

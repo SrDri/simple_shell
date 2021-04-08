@@ -1,8 +1,8 @@
 #include "shell.h"
 
 /**
- * write_prompt - writes the shell prompt
- * @ac: arguments count from the main()
+ * _prompt - shell prompt
+ * @ac: arguments count
 */
 
 void _prompt(int ac)
