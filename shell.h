@@ -12,5 +12,10 @@
 #include <sys/stat.h>
 
 int _putchar(char);
+void _prompt(int ac);
+void _strcat(char *dest, const char *src);
+bool _strcmp(const char *s1, const char *s2, int beg, int end);
+void _strcpy(char *dest, const char *src);
+int _strlen(const char *s);
 
 #endif /* _SHELL_H_ */
