@@ -14,7 +14,10 @@ int main(void)
 
 		controller = getline(&line, &buf, stdin);
 
-		exit_control(line, controller);
+		if (!env_built(line, env))
+		{
+			exit_control(line, controller);
+		}
 	}
 
 	free(line);
