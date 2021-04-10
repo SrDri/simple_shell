@@ -1,4 +1,4 @@
-[![Holberton's simple shell](https://www.holbertonschool.com/holberton-logo.png "Holberton's simple shell")](https://github.com/SrDri/simple_shell "Holberton's simple shell")
+[![Holberton's simple shell](https://cdn.discordapp.com/attachments/815792612119937035/830266099336609802/kisspng-bash-shell-script-command-line-interface-z-shell-5b3df572212d73.0687702015307871861359.png "Holberton's simple shell")](https://github.com/SrDri/simple_shell "Holberton's simple shell")
 #### Simple Shell written in C & Bash. 💎
 
 | 🐔 ** Menu ** 🐔 |
@@ -9,7 +9,7 @@
 | 📢 [Requirements](https://github.com/SrDri/simple_shell#requirements- "Requirements]") - Requirements. 📢 |
 | 🐺 [Functions required](https://github.com/SrDri/simple_shell#functions-required-in-the-program- "Functions required]") - Functions required. 🐺 |
 | 🔨 [Installation](https://github.com/SrDri/simple_shell#installation- "Installation]") - Installation. 🔨 |
-| ✌️ [Example](https://github.com/SrDri/simple_shell#example- "Example]") - Example. ✌️ |
+| ✌️ [Example](https://github.com/SrDri/simple_shell#example- "#examples-%EF%B8%8F]") - Example. ✌️ |
 |   |
 ------------
 ### Description 🔍
