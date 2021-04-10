@@ -9,10 +9,8 @@
 | 📢 [Requirements](https://github.com/SrDri/simple_shell#requirements- "Requirements]") - Requirements. 📢 |
 | 🐺 [Functions required](https://github.com/SrDri/simple_shell#functions-required-in-the-program- "Functions required]") - Functions required. 🐺 |
 | 🔨 [Installation](https://github.com/SrDri/simple_shell#installation- "Installation]") - Installation. 🔨 |
+| ✌️ [Example](https://github.com/SrDri/simple_shell#example- "Example]") - Example. ✌️ |
 |   |
-
-
-
 ------------
 ### Description 🔍
 This is a school project which goal is to mirror the sh command-line interpreter (shell), written by Ken Thompson in a limited scope but on a simpler way.
@@ -101,11 +99,40 @@ This project was designed to be runned in **Ubuntu 14.04 LTS linux environment**
 4.  Run the exectuable that was created on the previous step as following:
 `./hsh`
 
-######  If everything worked as supposed to, you should be able to see the program s command prompt
-
 ------------
 
-### Authors 💩
+# Examples ✌️
+
+######  If everything worked as supposed to, you should be able to use and see the program s command prompt as shown below:
+
+```bash
+$ ./hsh
+```
+```bash
+$ ls -l
+total 108
+
+-rw-rw-r-- 1 vagrant vagrant   161 Apr  2 05:30 AUTHORS
+-rw-rw-r-- 1 vagrant vagrant  6866 Apr 10 08:01 README.md
+-rw-rw-r-- 1 vagrant vagrant   150 Apr  9 02:01 _prompt.c
+-rw-rw-r-- 1 vagrant vagrant   247 Apr  5 09:06 _putchar.c
+-rw-rw-r-- 1 vagrant vagrant   320 Apr  8 05:49 _strcat.c
+-rw-rw-r-- 1 vagrant vagrant   502 Apr  9 04:31 _strcmp.c
+-rw-rw-r-- 1 vagrant vagrant   302 Apr  5 09:04 _strcpy.c
+-rw-rw-r-- 1 vagrant vagrant   225 Apr  9 02:01 _strlen.c
+-rw-rw-r-- 1 vagrant vagrant   524 Apr 10 07:59 _strtok.c
+-rw-rw-r-- 1 vagrant vagrant   304 Apr 10 01:20 env_built.c
+-rw-rw-r-- 1 vagrant vagrant   326 Apr  9 03:29 exit_control.c
+-rw-rw-r-- 1 vagrant vagrant   686 Apr 10 08:02 find_strseq.c
+-rw-rw-r-- 1 vagrant vagrant  1418 Apr 10 08:02 findpath.c
+-rw-rw-r-- 1 vagrant vagrant   534 Apr 10 08:02 get_strseq.c
+-rw-rw-r-- 1 vagrant vagrant   192 Apr 10 00:15 print_env.c
+-rw-rw-r-- 1 vagrant vagrant   783 Apr 10 01:24 shell.c
+-rw-rw-r-- 1 vagrant vagrant   766 Apr 10 01:04 shell.h
+```
+------------
+
+### Code Contributors 💩
 - Carlos Galeano [Twitter](https://twitter.com/CarlosG19285722) | [Email](dnny419@gmail.com).
 - Juan Jose Carabali [Twitter](https://twitter.com/Juanjch_22) | [Email](juanjcarabali@gmail.com).
 
