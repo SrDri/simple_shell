@@ -1,6 +1,19 @@
 [![Holberton's simple shell](https://www.holbertonschool.com/holberton-logo.png "Holberton's simple shell")](https://github.com/SrDri/simple_shell "Holberton's simple shell")
 # Simple Shell written in C & Bash.
 
+## Navigation table
+
+|  **Simple shell - menu** |
+|---------------|---------------------------------------|
+|[Description](https://github.com/SrDri/simple_shell#description "Description]") - Description. |
+|[Synopsis](https://github.com/SrDri/simple_shell#synopsis "Synopsis]") - Synopsis. |
+|[Allowed functions](https://github.com/SrDri/simple_shell#list-of-allowed-functions-and-system-calls "Allowed functions]") - Allowed functions. |
+|[Requirements](https://github.com/SrDri/simple_shell#requirements "Requirements]") - Requirements. |
+|[Functions required](https://github.com/SrDri/simple_shell#functions-required-in-the-program "Functions required]") - Functions required. |
+|[Requirements](https://github.com/SrDri/simple_shell#requirements "Requirements]") - Requirements. |
+|[Installation](https://github.com/SrDri/simple_shell#installation "Installation]") - Installation. |
+
+------------
 ### Description
 This is a school project which goal is to mirror the sh command-line interpreter (shell), written by Ken Thompson in a limited scope but on a simpler way.
 
@@ -39,6 +52,7 @@ This version of the shell has a collection of custom built-in commands along wit
 - wait3 (man 2 wait3)
 - wait4 (man 2 wait4)
 - write (man 2 write)
+
 ------------
 
 # Requirements
