@@ -8,7 +8,6 @@ This is a school project which goal is to mirror the sh command-line interpreter
 This version of the shell has a collection of custom built-in commands along with the functionality of running scripts in the the various paths on a given operating system.
 
 ### List of allowed functions and system calls
-<details><summary>functions and system calls allowed</summary>
 - access (man 2 access)
 - chdir (man 2 chdir)
 - close (man 2 close)
@@ -40,10 +39,6 @@ This version of the shell has a collection of custom built-in commands along wit
 - wait3 (man 2 wait3)
 - wait4 (man 2 wait4)
 - write (man 2 write)
-<p>
-
-</details>
-
 ------------
 
 # Requirements
