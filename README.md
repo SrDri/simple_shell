@@ -3,12 +3,12 @@
 
 | 🐔 ** Menu ** 🐔 |
 | ------------ |
-| 🔍 - [Description](https://github.com/SrDri/simple_shell#description "Description]") - Description. |
-| ❕ - [Synopsis](https://github.com/SrDri/simple_shell#synopsis "Synopsis]") - Synopsis.|
-| 📃 - [Allowed functions](https://github.com/SrDri/simple_shell#list-of-allowed-functions-and-system-calls "Allowed functions]") - Allowed functions.|
-| 📢 - [Requirements](https://github.com/SrDri/simple_shell#requirements "Requirements]") - Requirements. |
-| 🐺 - [Functions required](https://github.com/SrDri/simple_shell#functions-required-in-the-program "Functions required]") - Functions required. |
-| 🔨 - [Installation](https://github.com/SrDri/simple_shell#installation "Installation]") - Installation. |
+| - [Description](https://github.com/SrDri/simple_shell#description "Description]") - Description. 🔍 |
+| - [Synopsis](https://github.com/SrDri/simple_shell#synopsis "Synopsis]") - Synopsis. ❕ |
+| - [Allowed functions](https://github.com/SrDri/simple_shell#list-of-allowed-functions-and-system-calls "Allowed functions]") - Allowed functions. 📃 |
+| - [Requirements](https://github.com/SrDri/simple_shell#requirements "Requirements]") - Requirements. 📢 |
+| - [Functions required](https://github.com/SrDri/simple_shell#functions-required-in-the-program "Functions required]") - Functions required. 🐺 |
+| - [Installation](https://github.com/SrDri/simple_shell#installation "Installation]") - Installation. 🔨 |
 |   |
 
 
