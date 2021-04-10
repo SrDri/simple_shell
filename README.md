@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://github.com/SrDri/simple_shell><img src="https://i.imgur.com/8moVcJU.png" alt="Shell logo" width="200"></a>
+  <a href="https://github.com/SrDri/simple_shell"><img src="https://i.imgur.com/8moVcJU.png" alt="Shell logo" width="200"></a>
   <br>
 Simple Shell written in C & Bash. 💎
   <br>
