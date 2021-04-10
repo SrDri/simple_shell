@@ -1,7 +1,7 @@
 [![Holberton's simple shell](https://www.holbertonschool.com/holberton-logo.png "Holberton's simple shell")](https://github.com/SrDri/simple_shell "Holberton's simple shell")
 #### Simple Shell written in C & Bash. 💎
 
-| ** 🐔 Menu 🐔 |
+| 🐔 ** Menu ** 🐔 |
 | ------------ |
 | 🔍 - [Description](https://github.com/SrDri/simple_shell#description "Description]") - Description. |
 | ❕ - [Synopsis](https://github.com/SrDri/simple_shell#synopsis "Synopsis]") - Synopsis.|
