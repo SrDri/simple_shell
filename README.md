@@ -1,25 +1,27 @@
 [![Holberton's simple shell](https://www.holbertonschool.com/holberton-logo.png "Holberton's simple shell")](https://github.com/SrDri/simple_shell "Holberton's simple shell")
-# Simple Shell written in C & Bash.
+#### Simple Shell written in C & Bash. :fa-linux:
 
-|   |
+| ** :fa-star-o:Menu :fa-star-o:**  |
 | ------------ |
-| [Description](https://github.com/SrDri/simple_shell#description "Description]") - Description. |
-| [Synopsis](https://github.com/SrDri/simple_shell#synopsis "Synopsis]") - Synopsis.|
-| [Allowed functions](https://github.com/SrDri/simple_shell#list-of-allowed-functions-and-system-calls "Allowed functions]") - Allowed functions.|
-| [Requirements](https://github.com/SrDri/simple_shell#requirements "Requirements]") - Requirements. |
-| [Functions required](https://github.com/SrDri/simple_shell#functions-required-in-the-program "Functions required]") - Functions required. |
-| [Requirements](https://github.com/SrDri/simple_shell#requirements "Requirements]") - Requirements. |
-| [Installation](https://github.com/SrDri/simple_shell#installation "Installation]") - Installation. |
+| :fa-search: - [Description](https://github.com/SrDri/simple_shell#description "Description]") - Description. |
+| :fa-exclamation: - [Synopsis](https://github.com/SrDri/simple_shell#synopsis "Synopsis]") - Synopsis.|
+| :fa-bars: - [Allowed functions](https://github.com/SrDri/simple_shell#list-of-allowed-functions-and-system-calls "Allowed functions]") - Allowed functions.|
+| :fa-bullhorn: - [Requirements](https://github.com/SrDri/simple_shell#requirements "Requirements]") - Requirements. |
+| :fa-heart-o: - [Functions required](https://github.com/SrDri/simple_shell#functions-required-in-the-program "Functions required]") - Functions required. |
+| :fa-qq: - [Requirements](https://github.com/SrDri/simple_shell#requirements "Requirements]") - Requirements. |
+| :fa-angellist: - [Installation](https://github.com/SrDri/simple_shell#installation "Installation]") - Installation. |
 |   |
+
+
 
 ------------
-### Description
+### Description :fa-search:
 This is a school project which goal is to mirror the sh command-line interpreter (shell), written by Ken Thompson in a limited scope but on a simpler way.
 
-### Synopsis
+### Synopsis :fa-exclamation:
 This version of the shell has a collection of custom built-in commands along with the functionality of running scripts in the the various paths on a given operating system.
 
-### List of allowed functions and system calls
+### List of allowed functions and system calls :fa-bars: 
 - access (man 2 access)
 - chdir (man 2 chdir)
 - close (man 2 close)
@@ -54,13 +56,13 @@ This version of the shell has a collection of custom built-in commands along wit
 
 ------------
 
-# Requirements
+# Requirements :fa-bullhorn:
 This project was designed to be runned in **Ubuntu 14.04 LTS linux environment** and as** to be compiled** using the GNU compiler collection **v. gcc 4.8.4** with the following flags:
 `-Wall, -Werror, -Wextra, -pedantic`
 
 ------------
 
-## Functions required in the program
+## Functions required in the program :fa-heart-o:
 
 |   **File**    |  **Brief description**                       |
 |---------------|---------------------------------------|
@@ -87,7 +89,7 @@ This project was designed to be runned in **Ubuntu 14.04 LTS linux environment**
 
 ------------
 
-# Installation
+# Installation :fa-angellist:
 1.  Clone this repository in your personal computer or machine with the following command:
 `git clone https://github.com/SrDri/simple_shell.git`
 
@@ -104,7 +106,10 @@ This project was designed to be runned in **Ubuntu 14.04 LTS linux environment**
 
 ------------
 
-### Authors
+### Authors :fa-user-md: 
 - Carlos Galeano [Twitter](https://twitter.com/CarlosG19285722) | [Email](dnny419@gmail.com).
 - Juan Jose Carabali [Twitter](https://twitter.com/Juanjch_22) | [Email](juanjcarabali@gmail.com).
+
+------------
+:fa-long-arrow-up: - [Back to the top](https://github.com/SrDri/simple_shell# "Back to the top]") - Back to the top. :fa-long-arrow-up:
 
