@@ -1,8 +1,6 @@
 [![Holberton's simple shell](https://www.holbertonschool.com/holberton-logo.png "Holberton's simple shell")](https://github.com/SrDri/simple_shell "Holberton's simple shell")
 # Simple Shell written in C & Bash.
 
-# Simple Shell written in C & Bash.
-
 - [Description](https://github.com/SrDri/simple_shell#description "Description]") - Description.
 - [Synopsis](https://github.com/SrDri/simple_shell#synopsis "Synopsis]") - Synopsis.
 - [Allowed functions](https://github.com/SrDri/simple_shell#list-of-allowed-functions-and-system-calls "Allowed functions]") - Allowed functions.
