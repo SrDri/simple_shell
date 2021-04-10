@@ -2,11 +2,9 @@
   <br>
   <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://i.imgur.com/8moVcJU.png" alt="Shell logo" width="200"></a>
   <br>
-#### Simple Shell written in C & Bash. 💎
+Simple Shell written in C & Bash. 💎
   <br>
 </h1>
-
-#### Simple Shell written in C & Bash. 💎
 
 | 🐔 ** Menu ** 🐔 |
 | ------------ |
