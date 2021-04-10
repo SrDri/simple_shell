@@ -10,7 +10,7 @@
  * Return: void
 */
 
-void _strseq(const char *s, int beg, int end, char **res)
+void get_strseq(const char *s, int beg, int end, char **res)
 {
 	int i = 0;
 

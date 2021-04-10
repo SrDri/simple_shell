@@ -5,11 +5,10 @@
  * using the environment `env`
  * @env: the pointer to a environ/argv
  * @cmd: the string with a command
- *
  * Return: the resolved path to executable `cmd`, if it
  * exists, otherwise the `cmd` as is
  */
-char *_findpath(char **env, char *cmd)
+char *findpath(char **env, char *cmd)
 {
 	char *path, *tok, *bin;
 	int c, path_len = 0, tok_beg = 0, tok_end = 5;
@@ -24,7 +23,7 @@ char *_findpath(char **env, char *cmd)
 
 	path_len = _strlen(path);
 	tok_beg = tok_end + 1; /* separator */
-	tok_end = find_str_seq(path, ":", tok_beg);
+	tok_end = find_strseq(path, ":", tok_beg);
 
 	tok = malloc(sizeof(char) * (tok_end - tok_beg));
 	if (!tok)
@@ -34,7 +33,7 @@ char *_findpath(char **env, char *cmd)
 	if (!bin)
 		return (NULL);
 
-	_strseq(path, tok_beg, tok_end, &tok);
+	get_strseq(path, tok_beg, tok_end, &tok);
 
 	_strcpy(bin, tok);
 	_strcat(bin, "/");
@@ -50,9 +49,9 @@ char *_findpath(char **env, char *cmd)
 			return (cmd);
 
 		tok_beg = tok_end + 1; /* separator */
-		tok_end = find_str_seq(path, ":", tok_beg);
+		tok_end = find_strseq(path, ":", tok_beg);
 
-		_strseq(path, tok_beg, tok_end, &tok);
+		get_strseq(path, tok_beg, tok_end, &tok);
 
 		_strcpy(bin, tok);
 		_strcat(bin, "/");
