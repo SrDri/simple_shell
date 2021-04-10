@@ -1,4 +1,11 @@
-[![Holberton's simple shell](https://cdn.discordapp.com/attachments/815792612119937035/830266099336609802/kisspng-bash-shell-script-command-line-interface-z-shell-5b3df572212d73.0687702015307871861359.png "Holberton's simple shell")](https://github.com/SrDri/simple_shell "Holberton's simple shell")
+<h1 align="center">
+  <br>
+  <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://i.imgur.com/8moVcJU.png" alt="Shell logo" width="200"></a>
+  <br>
+#### Simple Shell written in C & Bash. 💎
+  <br>
+</h1>
+
 #### Simple Shell written in C & Bash. 💎
 
 | 🐔 ** Menu ** 🐔 |
