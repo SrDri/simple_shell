@@ -1,26 +1,26 @@
 [![Holberton's simple shell](https://www.holbertonschool.com/holberton-logo.png "Holberton's simple shell")](https://github.com/SrDri/simple_shell "Holberton's simple shell")
 #### Simple Shell written in C & Bash. 💎
 
-| ** Menu ** |
+| 🐔 ** Menu ** 🐔 |
 | ------------ |
-| [Description](https://github.com/SrDri/simple_shell#description "Description]") - Description. 🐔 |
-| [Synopsis](https://github.com/SrDri/simple_shell#synopsis "Synopsis]") - Synopsis. |
-| [Allowed functions](https://github.com/SrDri/simple_shell#list-of-allowed-functions-and-system-calls "Allowed functions]") - Allowed functions. |
-| [Requirements](https://github.com/SrDri/simple_shell#requirements "Requirements]") - Requirements. |
-| [Functions required](https://github.com/SrDri/simple_shell#functions-required-in-the-program "Functions required]") - Functions required. |
-| [Installation](https://github.com/SrDri/simple_shell#installation "Installation]") - Installation. |
+| - [Description](https://github.com/SrDri/simple_shell#description "Description]") - Description. 🔍 |
+| - [Synopsis](https://github.com/SrDri/simple_shell#synopsis "Synopsis]") - Synopsis. ❕ |
+| - [Allowed functions](https://github.com/SrDri/simple_shell#list-of-allowed-functions-and-system-calls "Allowed functions]") - Allowed functions. 📃 |
+| - [Requirements](https://github.com/SrDri/simple_shell#requirements "Requirements]") - Requirements. 📢 |
+| - [Functions required](https://github.com/SrDri/simple_shell#functions-required-in-the-program "Functions required]") - Functions required. 🐺 |
+| - [Installation](https://github.com/SrDri/simple_shell#installation "Installation]") - Installation. 🔨 |
 |   |
 
 
 
 ------------
-### Description 🔍
+### Description
 This is a school project which goal is to mirror the sh command-line interpreter (shell), written by Ken Thompson in a limited scope but on a simpler way.
 
-### Synopsis ❕
+### Synopsis
 This version of the shell has a collection of custom built-in commands along with the functionality of running scripts in the the various paths on a given operating system.
 
-### List of allowed functions and system calls 📃
+### List of allowed functions and system calls
 - access (man 2 access)
 - chdir (man 2 chdir)
 - close (man 2 close)
@@ -55,13 +55,13 @@ This version of the shell has a collection of custom built-in commands along wit
 
 ------------
 
-# Requirements 📢
+# Requirements
 This project was designed to be runned in **Ubuntu 14.04 LTS linux environment** and as** to be compiled** using the GNU compiler collection **v. gcc 4.8.4** with the following flags:
 `-Wall, -Werror, -Wextra, -pedantic`
 
 ------------
 
-## Functions required in the program 🐺
+## Functions required in the program
 
 |   **File**    |  **Brief description**                       |
 |---------------|---------------------------------------|
@@ -88,7 +88,7 @@ This project was designed to be runned in **Ubuntu 14.04 LTS linux environment**
 
 ------------
 
-# Installation 🔨
+# Installation
 1.  Clone this repository in your personal computer or machine with the following command:
 `git clone https://github.com/SrDri/simple_shell.git`
 
