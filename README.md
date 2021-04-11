@@ -81,15 +81,16 @@ This project was designed to be runned in **Ubuntu 14.04 LTS linux environment**
 |  `compile`	|  [compile](https://github.com/SrDri/simple_shell/blob/main/compile "compile]") - Bash script that compiles the entire project for easier usage.|
 |  `env_built.c`	|  [env_built.c](https://github.com/SrDri/simple_shell/blob/main/env_built.c "env_built.c]") - Function that handles the enviroment built-in command.|
 |  `exit_control.c`	|  [exit_control.c](https://github.com/SrDri/simple_shell/blob/main/exit_control.c "exit_control.c]") - Function that handles the exit phase of the project and writes a message accordingly.|
-|  `find_strseq.c`	|  [find_str_seq.c](https://github.com/SrDri/simple_shell/blob/main/find_str_seq.c "find_str_seq.c]") - Function that finds the index of a separator.|
-|  `find_path.c`	|  [find_path.c](https://github.com/SrDri/simple_shell/blob/main/path.c "path.c]") - Function that resolves the PATH to a command. For instance, cmd.|
+|  `find_strseq.c`	|  [find_str_seq.c](https://github.com/SrDri/simple_shell/blob/main/find_strseq.c "find_strseq.c]") - Function that finds the index of a separator.|
+|  `find_path.c`	|  [find_path.c](https://github.com/SrDri/simple_shell/blob/main/find_path.c "find_path.c]") - Function that resolves the PATH to a command. For instance, cmd.|
 |  `print_env.c`	|  [print_env.c](https://github.com/SrDri/simple_shell/blob/main/print_env.c "print_env.c]") - Function that prints out the enviroment. For instance, cmd.|
 |  `shell.c`	|  [shell.c](https://github.com/SrDri/simple_shell/blob/main/shell.c "shell.c]") - Main function of the project.|
 |  `shell.h`	|  [shell.h](https://github.com/SrDri/simple_shell/blob/main/shell.h "shell.h]") - Main header file containing all the prototypes and libraries required for this program.|
 |  `_strtok.c`	|  [_strtok.c](https://github.com/SrDri/simple_shell/blob/main/_strtok.c "_strtok.c]") - Function that breaks a string into a series of tokens.|
 |  `man_1_simple_shell`	|  [man_1_simple_shell](https://github.com/SrDri/simple_shell/blob/main/man_1_simple_shell "man_1_simple_shell]") - Our simple_shell manual page.|
 
-🔼 - [Back to the top](https://github.com/SrDri/simple_shell#------simple-shell-written-in-c--bash--- "Back to the top]") - Go back to the top. 🔼
+[🔼](https://github.com/SrDri/simple_shell#------simple-shell-written-in-c--bash--- "🔼]") - [Back to the top](https://github.com/SrDri/simple_shell#------simple-shell-written-in-c--bash--- "Back to the top]") - Go back to the top. 🔼
+
 
 ------------
 
