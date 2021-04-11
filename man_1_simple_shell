@@ -1,0 +1,107 @@
+.TH hsh "April 11, 2021" "1.0" "hsh General Commands Manual"
+
+.SH NAME
+
+.B simple_shell - hsh
+- command line interpreter or shell
+
+
+.SH SYNOPSIS
+
+This version of the shell has a collection of custom built-in commands along with the functionality of running scripts in the the various paths on a given operating system.
+
+.SH DESCRIPTION
+
+This is a school project which goal is to mirror the sh command-line interpreter (shell), written by Ken Thompson in a limited scope but on a simpler way.
+
+
+.SH OVERVIEW
+
+Reading from either the terminal or files, simple_shell interprets and executes commands.
+
+
+.SH USAGE
+
+For easier usage, compile the project using our sh script as shown below:
+.P
+.RS
+.B $ ./compile
+.P
+.RE
+simple_shell can be run in interactive mode by entering the below command on the command line followd by "enter." Note that the prompt ('$') will appear and you will then be in interactive mode and able to enter commands followed by "enter."
+.P
+.RS
+.B $ ./hsh
+.P
+.RE
+simple_shell can be run in non-interactive mode through the use of shell scripts. For instance, you can use pipes to do this ('|'):
+.P
+.RS
+.B echo 'pwd' | ./hsh
+
+.SH EXECUTABLES
+
+Example of executables:
+.IP
+.br
+.\&
+.RS
+\&$ echo "Hello world"
+.br
+\&"Hello world"
+.br
+\&$
+
+
+.SH BUILTINS
+
+The following builtin commands are supported:
+
+.IT
+.B env
+- prints the environment variables
+
+.B exit
+- exits the program
+
+Example of builtin command:
+.IP
+.br
+.\&
+.RS
+\&$ env
+.br
+\&TERM=xterm-256color
+.br
+\&COLORTERM=truecolor
+.br
+\&TERM_PROGRAM_VERSION=1.55.1
+.br
+\&LANGUAGE=en_US:
+.br
+\&PWD=/home/vagrant/simple_shell
+.br
+\&LOGNAME=vagrant
+.br
+\&XDG_SESSION_TYPE=tty
+.br
+\&VSCODE_GIT_ASKPASS_NODE=/home/vagrant/.vscode-server/bin/08a217c4d27a02a5bcde898fd7981bda5b49391b/node
+.br
+\&MOTD_SHOWN=pam
+.br
+\&HOME=/home/vagrant
+.br
+\&$
+
+.SH BUGS
+No known bugs at the compiling time (April 11, 2021).
+However, if you find any, please report it to us!
+
+.SH AUTHORS
+
+Juan Jose Carabali <juanjcarabali@gmail.com>
+
+Carlos Galeano <carlos.galeano@outlook.it>
+
+.SH SEE ALSO
+sh
