@@ -8,7 +8,7 @@
  * Return: the resolved path to executable `cmd`, if it
  * exists, otherwise the `cmd` as is
  */
-char *findpath(char **env, char *cmd)
+char *find_path(char **env, char *cmd)
 {
 	char *path, *tok, *bin;
 	int c, path_len = 0, tok_beg = 0, tok_end = 5;
