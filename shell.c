@@ -47,6 +47,7 @@ int main(int ac, char *av[], char *env[])
 						write(STDOUT_FILENO, err_msg, 26);
 						return (-1);
 					}
+					exit(EXIT_FAILURE);
 				}
 				else
 				{
@@ -60,6 +61,7 @@ int main(int ac, char *av[], char *env[])
 		(void)av;
 		(void)env;
 	}
+	exit(EXIT_SUCCESS);
 	free(line);
 	return (0);
 }
