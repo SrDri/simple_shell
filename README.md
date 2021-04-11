@@ -14,7 +14,7 @@ Simple Shell written in C & Bash. 💎
 | 📢 [Requirements](https://github.com/SrDri/simple_shell#requirements- "Requirements]") - Requirements. 📢 |
 | 🐺 [File descriptor](https://github.com/SrDri/simple_shell#file-descriptor- "file descriptor]") - File descriptor. 🐺 |
 | 🔨 [Installation](https://github.com/SrDri/simple_shell#installation- "Installation]") - Installation. 🔨 |
-| ✨ [Examples](https://github.com/SrDri/simple_shell#example- "#examples]") - Example. ✨ |
+| ✨ [Examples](https://github.com/SrDri/simple_shell#examples- "Examples]") - Examples. ✨ |
 | 🐭 [Bugs](https://github.com/SrDri/simple_shell#bugs- "#bugs-]") - Known bugs. 🐭 |
 |   |
 ------------
@@ -150,12 +150,12 @@ echo "pwd" | ./hsh
 
 ------------
 
-### Bugs 🐭
+# Bugs 🐭
 - No known bugs at compiling time (April 11, 2021). However, if you find any, please report it to us!
 
 ------------
 
-### Code Contributors 💩
+# Code Contributors 💩
 - Juan Jose Carabali [Twitter](https://twitter.com/Juanjch_22) | [Email](juanjcarabali@gmail.com).
 - Carlos Galeano [Twitter](https://twitter.com/CarlosG19285722) | [Email](carlos.galeano@outlook.it).
 
