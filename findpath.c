@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * path_resolver - resolves the PATH to a commpand `cmd`
+ * findpath - resolves the PATH to a commpand `cmd`
  * using the environment `env`
  * @env: the pointer to a environ/argv
  * @cmd: the string with a command

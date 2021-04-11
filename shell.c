@@ -2,13 +2,11 @@
 
 int main(int ac, char *av[], char *env[])
 {
-	extern char **environ;
-	size_t buf = 0;
-	char *line = NULL;
 	ssize_t controller = 0;
-	char *err_msg = "not found\n";
-	pid_t frk = fork();
+	size_t buf;
+	char *line = NULL, *err_msg = "No such file or directory\n";
 	char **tok_s = NULL;
+	pid_t frk;
 
 	if (ac == 1)
 	{
@@ -18,10 +16,11 @@ int main(int ac, char *av[], char *env[])
 				_prompt(ac);
 
 			controller = getline(&line, &buf, stdin);
-
 			exit_control(line, controller);
 
 			tok_s = _strtok(line);
+
+			frk = fork();
 
 			if (frk < 0)
 				return (-1);
@@ -30,21 +29,24 @@ int main(int ac, char *av[], char *env[])
 			{
 				if (frk == 0)
 				{
-					if (execve(findpath(environ, tok_s[0]), tok_s, NULL) == -1)
+					if (execve(findpath(env, tok_s[0]), tok_s, NULL) == EOF)
 					{
-						printf("%s\n", err_msg);
+						write(STDOUT_FILENO, err_msg, 26);
 						return (-1);
 					}
 				}
 				else
+				{
 					wait(NULL);
+				}
 			}
 		}
-		/* void av y void env */
+	}
+	else
+	{
 		(void)av;
 		(void)env;
-		free(line);
 	}
-
+	free(line);
 	return (0);
 }

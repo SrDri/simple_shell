@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * _strseq - takes a sequence from the interval of s[beg:end],
+ * get_strseq - takes a sequence from the interval of s[beg:end],
  * then copies it into the string passed by the poiner.
  * @s: string constant from where the token would be taken
  * @beg: the beginning of the interval of s[beg:end]
