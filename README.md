@@ -89,7 +89,7 @@ This project was designed to be runned in **Ubuntu 14.04 LTS linux environment**
 |  `_strtok.c`	|  [_strtok.c](https://github.com/SrDri/simple_shell/blob/main/_strtok.c "_strtok.c]") - Function that breaks a string into a series of tokens.|
 |  `man_1_simple_shell`	|  [man_1_simple_shell](https://github.com/SrDri/simple_shell/blob/main/man_1_simple_shell "man_1_simple_shell]") - Our simple_shell manual page.|
 
-[🔼](https://github.com/SrDri/simple_shell#------simple-shell-written-in-c--bash--- "🔼]") - [Back to the top](https://github.com/SrDri/simple_shell#------simple-shell-written-in-c--bash--- "Back to the top]") - Go back to the top. 🔼
+[🔼](https://github.com/SrDri/simple_shell#------simple-shell-written-in-c--bash--- "🔼]") - [Back to the top](https://github.com/SrDri/simple_shell#------simple-shell-written-in-c--bash--- "Back to the top]") - Go back to the top. [🔼](https://github.com/SrDri/simple_shell#------simple-shell-written-in-c--bash--- "🔼]")
 
 
 ------------
@@ -163,5 +163,5 @@ echo "pwd" | ./hsh
 - Carlos Galeano [Twitter](https://twitter.com/CarlosG19285722) | [Email](carlos.galeano@outlook.it).
 
 ------------
-🔼 - [Back to the top](https://github.com/SrDri/simple_shell#------simple-shell-written-in-c--bash--- "Back to the top]") - Go back to the top. 🔼
+[🔼](https://github.com/SrDri/simple_shell#------simple-shell-written-in-c--bash--- "🔼]") - [Back to the top](https://github.com/SrDri/simple_shell#------simple-shell-written-in-c--bash--- "Back to the top]") - Go back to the top. [🔼](https://github.com/SrDri/simple_shell#------simple-shell-written-in-c--bash--- "🔼]")
 
