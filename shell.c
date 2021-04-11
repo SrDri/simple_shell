@@ -29,7 +29,7 @@ int main(int ac, char *av[], char *env[])
 			{
 				if (frk == 0)
 				{
-					if (execve(findpath(env, tok_s[0]), tok_s, NULL) == EOF)
+					if (execve(find_path(env, tok_s[0]), tok_s, NULL) == EOF)
 					{
 						write(STDOUT_FILENO, err_msg, 26);
 						return (-1);
