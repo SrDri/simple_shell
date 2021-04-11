@@ -18,6 +18,19 @@ int main(int ac, char *av[], char *env[])
 			controller = getline(&line, &buf, stdin);
 			exit_control(line, controller);
 
+			if (controller == -1)
+			{
+				if (feof(stdin))
+				{
+					exit(EXIT_SUCCESS); // We recieved an EOF
+				}
+				else
+				{
+					perror("Error: ");
+					exit(EXIT_FAILURE);
+				}
+			}
+
 			tok_s = _strtok(line);
 
 			frk = fork();
