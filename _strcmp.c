@@ -17,8 +17,7 @@ bool _strcmp(const char *s1, const char *s2, int beg, int end)
 	if (!s1 || !s2 || beg > end)
 		return (false);
 
-	do
-	{
+	do {
 		if (s1[beg] != s2[beg])
 			return (false);
 
