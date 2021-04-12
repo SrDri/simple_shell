@@ -14,7 +14,7 @@ Simple Shell written in C & Bash. 💎
 | 📢 [Requirements](https://github.com/SrDri/simple_shell#requirements- "Requirements]") - Requirements. 📢 |
 | 🐺 [File descriptor](https://github.com/SrDri/simple_shell#file-descriptor- "file descriptor]") - File descriptor. 🐺 |
 | 🔨 [Installation](https://github.com/SrDri/simple_shell#installation- "Installation]") - Installation. 🔨 |
-| ✨ [Examples](https://github.com/SrDri/simple_shell#example- "#examples]") - Example. ✨ |
+| ✨ [Examples](https://github.com/SrDri/simple_shell#examples- "Examples]") - Examples. ✨ |
 | 🐭 [Bugs](https://github.com/SrDri/simple_shell#bugs- "#bugs-]") - Known bugs. 🐭 |
 |   |
 ------------
@@ -74,20 +74,23 @@ This project was designed to be runned in **Ubuntu 14.04 LTS linux environment**
 |  `_putchar.c` |[_putchar.c](https://github.com/SrDri/simple_shell/blob/main/_putchar.c "_putchar.c]") - Function that writes a character to standard input.|
 |  `_strcat.c`	|  [_strcat.c](https://github.com/SrDri/simple_shell/blob/main/_strcat.c "_strcat.c]") - Function that concatenates two strings.|
 |  `_strcmp.c`	|  [_strcmp.c](https://github.com/SrDri/simple_shell/blob/main/_strcmp.c "_strcmp.c]") - Function that compares two strings.|
-|  `_strcpy.c`	|  [_strcpy.c](https://github.com/SrDri/simple_shell/blob/main/_strcmp.c "_strcpy.c]") - Function that creates a copy of a string.|
+|  `_strcpy.c`	|  [_strcpy.c](https://github.com/SrDri/simple_shell/blob/main/_strcpy.c "_strcpy.c]") - Function that creates a copy of a string.|
 |  `_strlen.c`	|  [_strlen.c](https://github.com/SrDri/simple_shell/blob/main/_strlen.c "_strlen.c]") - Function that gets the length of a string.|
-|  `get_strseq.c`	|  [get_strseq.c](https://github.com/SrDri/simple_shell/blob/main/get_strseq.c "_strseq.c]") - Function that takes a sequence from an interval then copies it into a string.|
+|  `get_strseq.c`	|  [get_strseq.c](https://github.com/SrDri/simple_shell/blob/main/get_strseq.c "get_strseq.c]") - Function that takes a sequence from an interval then copies it into a string.|
 |  `authors_gen.sh`	|  [authors_gen.sh](https://github.com/SrDri/simple_shell/blob/main/authors_gen.sh "authors_gen.sh]") - Bash script that generates a file containing the authors of this project.|
 |  `compile`	|  [compile](https://github.com/SrDri/simple_shell/blob/main/compile "compile]") - Bash script that compiles the entire project for easier usage.|
 |  `env_built.c`	|  [env_built.c](https://github.com/SrDri/simple_shell/blob/main/env_built.c "env_built.c]") - Function that handles the enviroment built-in command.|
 |  `exit_control.c`	|  [exit_control.c](https://github.com/SrDri/simple_shell/blob/main/exit_control.c "exit_control.c]") - Function that handles the exit phase of the project and writes a message accordingly.|
-|  `find_strseq.c`	|  [find_str_seq.c](https://github.com/SrDri/simple_shell/blob/main/find_str_seq.c "find_str_seq.c]") - Function that finds the index of a separator.|
-|  `find_path.c`	|  [find_path.c](https://github.com/SrDri/simple_shell/blob/main/path.c "path.c]") - Function that resolves the PATH to a command. For instance, cmd.|
+|  `find_strseq.c`	|  [find_strseq.c](https://github.com/SrDri/simple_shell/blob/main/find_strseq.c "find_strseq.c]") - Function that finds the index of a separator.|
+|  `find_path.c`	|  [find_path.c](https://github.com/SrDri/simple_shell/blob/main/find_path.c "find_path.c]") - Function that resolves the PATH to a command. For instance, cmd.|
 |  `print_env.c`	|  [print_env.c](https://github.com/SrDri/simple_shell/blob/main/print_env.c "print_env.c]") - Function that prints out the enviroment. For instance, cmd.|
 |  `shell.c`	|  [shell.c](https://github.com/SrDri/simple_shell/blob/main/shell.c "shell.c]") - Main function of the project.|
 |  `shell.h`	|  [shell.h](https://github.com/SrDri/simple_shell/blob/main/shell.h "shell.h]") - Main header file containing all the prototypes and libraries required for this program.|
 |  `_strtok.c`	|  [_strtok.c](https://github.com/SrDri/simple_shell/blob/main/_strtok.c "_strtok.c]") - Function that breaks a string into a series of tokens.|
 |  `man_1_simple_shell`	|  [man_1_simple_shell](https://github.com/SrDri/simple_shell/blob/main/man_1_simple_shell "man_1_simple_shell]") - Our simple_shell manual page.|
+
+[🔼](https://github.com/SrDri/simple_shell#------simple-shell-written-in-c--bash--- "Back to the top") - [Back to the top](https://github.com/SrDri/simple_shell#------simple-shell-written-in-c--bash--- "Back to the top]") - Go back to the top. [🔼](https://github.com/SrDri/simple_shell#------simple-shell-written-in-c--bash--- "Back to the top")
+
 
 ------------
 
@@ -150,15 +153,15 @@ echo "pwd" | ./hsh
 
 ------------
 
-### Bugs 🐭
+# Bugs 🐭
 - No known bugs at compiling time (April 11, 2021). However, if you find any, please report it to us!
 
 ------------
 
-### Code Contributors 💩
+# Code Contributors 💩
 - Juan Jose Carabali [Twitter](https://twitter.com/Juanjch_22) | [Email](juanjcarabali@gmail.com).
 - Carlos Galeano [Twitter](https://twitter.com/CarlosG19285722) | [Email](carlos.galeano@outlook.it).
 
 ------------
-🔼 - [Back to the top](https://github.com/SrDri/simple_shell# "Back to the top]") - Go back to the top. 🔼
+[🔼](https://github.com/SrDri/simple_shell#------simple-shell-written-in-c--bash--- "Back to the top") - [Back to the top](https://github.com/SrDri/simple_shell#------simple-shell-written-in-c--bash--- "Back to the top]") - Go back to the top. [🔼](https://github.com/SrDri/simple_shell#------simple-shell-written-in-c--bash--- "Back to the top")
 
