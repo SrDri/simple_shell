@@ -1,5 +1,13 @@
 #include "shell.h"
 
+/**
+ * main - root hsh
+ * @ac: arguments count
+ * @av: arg
+ * @env: environment
+ * Return: shell
+*/
+
 int main(int ac, char *av[], char *env[])
 {
 	ssize_t controller = 0;
@@ -8,60 +16,33 @@ int main(int ac, char *av[], char *env[])
 	char **tok_s = NULL;
 	pid_t frk;
 
-	if (ac == 1)
+	while (controller != EOF)
 	{
-		while (controller != EOF)
+		if (isatty(STDIN_FILENO))
+			_prompt(ac);
+
+		controller = getline(&line, &buf, stdin);
+		exit_control(line, controller);
+		tok_s = _strtok(line);
+		frk = fork();
+		if (frk < 0)
+			return (-1);
+
+		if (!env_built(tok_s[0], env))
 		{
-			if (isatty(STDIN_FILENO))
-				_prompt(ac);
-
-			controller = getline(&line, &buf, stdin);
-			exit_control(line, controller);
-
-			if (controller == -1)
+			if (frk == 0)
 			{
-				if (feof(stdin))
+				if (execve(find_path(env, tok_s[0]), tok_s, NULL) == EOF)
 				{
-					exit(EXIT_SUCCESS); // We recieved an EOF
-				}
-				else
-				{
-					perror("Error: ");
-					exit(EXIT_FAILURE);
+					write(STDOUT_FILENO, err_msg, 26);
+					return (-1);
 				}
 			}
-
-			tok_s = _strtok(line);
-
-			frk = fork();
-
-			if (frk < 0)
-				return (-1);
-
-			if (!env_built(tok_s[0], env))
-			{
-				if (frk == 0)
-				{
-					if (execve(find_path(env, tok_s[0]), tok_s, NULL) == EOF)
-					{
-						write(STDOUT_FILENO, err_msg, 26);
-						return (-1);
-					}
-					exit(EXIT_FAILURE);
-				}
-				else
-				{
-					wait(NULL);
-				}
-			}
+			else
+				wait(NULL);
 		}
 	}
-	else
-	{
-		(void)av;
-		(void)env;
-	}
-	exit(EXIT_SUCCESS);
+	(void)av;
 	free(line);
 	return (0);
 }

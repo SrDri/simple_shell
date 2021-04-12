@@ -3,7 +3,8 @@
 /**
  * print_env - print out env
  * @env: env
- */
+*/
+
 void print_env(char **env)
 {
 	while (*env)

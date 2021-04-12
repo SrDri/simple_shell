@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * findpath - resolves the PATH to a commpand `cmd`
+ * find_path - resolves the PATH to a commpand `cmd`
  * using the environment `env`
  * @env: the pointer to a environ/argv
  * @cmd: the string with a command
@@ -13,13 +13,9 @@ char *find_path(char **env, char *cmd)
 	char *path, *tok, *bin;
 	int c, path_len = 0, tok_beg = 0, tok_end = 5;
 
-	/* printf("separator is at the index #: %d", find_str_seq("ololo, trololo\n", ",\n", 0)); */
-
 	for (c = 0; env[c]; c++)
 		if (_strcmp("PATH=", env[c], tok_beg, tok_end - 1))
 			path = env[c];
-
-	/* lol_ololo(path, tok, tok_beg, tok_end); */
 
 	path_len = _strlen(path);
 	tok_beg = tok_end + 1; /* separator */
@@ -41,10 +37,6 @@ char *find_path(char **env, char *cmd)
 
 	while (access(bin, F_OK) == -1)
 	{
-		/* file doesn't exist */
-
-		/* no more tokens in the path */
-		/* return the command as is */
 		if (path_len == tok_end)
 			return (cmd);
 
@@ -57,7 +49,5 @@ char *find_path(char **env, char *cmd)
 		_strcat(bin, "/");
 		_strcat(bin, cmd);
 	}
-
-	/* file exists */
 	return (bin);
 }

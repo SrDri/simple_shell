@@ -1,9 +1,9 @@
 #include "shell.h"
 
 /**
- * _strtok - finds and returns 
- *
- *
+ * _strtok - finds and returns
+ * @s: string
+ * Return: tokenize
 */
 
 char **_strtok(char *s)
