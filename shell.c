@@ -22,11 +22,11 @@ int main(int ac, char *av[], char *env[])
 		if (isatty(STDIN_FILENO))
 			_prompt(ac);
 		controller = getline(&line, &buf, stdin);
-		exit_control(line, controller);
 		tok_s = _strtok(line);
 
 		if (!env_built(tok_s[0], env))
 		{
+            exit_control(line, controller);
 			frk = fork();
 			if (frk < 0)
 				return (-1);
