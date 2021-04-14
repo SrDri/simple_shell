@@ -22,25 +22,24 @@ int main(int ac, char *av[], char *env[])
 			_prompt(ac);
 
 		controller = getline(&line, &buf, stdin);
+		exit_control(line, controller);
 		tok_s = _strtok(line);
+		if (_strcmp(tok_s[0], "env", 0, 2))
+			print_env(env);
 		frk = fork();
 		if (frk < 0)
 			return (-1);
 
-		if (!env_built(tok_s[0], env))
+		if (frk == 0)
 		{
-			exit_control(line, controller);
-			if (frk == 0)
+			if (execve(find_path(env, tok_s[0]), tok_s, NULL) == EOF)
 			{
-				if (execve(find_path(env, tok_s[0]), tok_s, NULL) == EOF)
-				{
-					write(STDOUT_FILENO, err_msg, 26);
-					return (-1);
-				}
+				write(STDOUT_FILENO, err_msg, 26);
+				return (-1);
 			}
-			else
-				wait(NULL);
 		}
+		else
+			wait(NULL);
 	}
 	(void)av;
 	free(line);
