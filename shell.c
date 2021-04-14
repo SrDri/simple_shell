@@ -22,7 +22,6 @@ int main(int ac, char *av[], char *env[])
 			_prompt(ac);
 
 		controller = getline(&line, &buf, stdin);
-		exit_control(line, controller);
 		tok_s = _strtok(line);
 		frk = fork();
 		if (frk < 0)
@@ -30,6 +29,7 @@ int main(int ac, char *av[], char *env[])
 
 		if (!env_built(tok_s[0], env))
 		{
+			exit_control(line, controller);
 			if (frk == 0)
 			{
 				if (execve(find_path(env, tok_s[0]), tok_s, NULL) == EOF)
