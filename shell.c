@@ -24,12 +24,12 @@ int main(int ac, char *av[], char *env[])
 		controller = getline(&line, &buf, stdin);
 		exit_control(line, controller);
 		tok_s = _strtok(line);
-		frk = fork();
-		if (frk < 0)
-			return (-1);
 
 		if (!env_built(tok_s[0], env))
 		{
+			frk = fork();
+			if (frk < 0)
+				return (-1);
 			if (frk == 0)
 			{
 				if (execve(find_path(env, tok_s[0]), tok_s, NULL) == EOF)
