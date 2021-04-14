@@ -18,11 +18,12 @@ int main(int ac, char *av[], char *env[])
 
 	while (controller != EOF)
 	{
+		signal(SIGINT, sig_han);
+
 		if (isatty(STDIN_FILENO))
 			_prompt(ac);
 
 		controller = getline(&line, &buf, stdin);
-		exit_control(line, controller);
 		tok_s = _strtok(line);
 		frk = fork();
 		if (frk < 0)
@@ -32,6 +33,7 @@ int main(int ac, char *av[], char *env[])
 		{
 			if (frk == 0)
 			{
+				exit_control(line, controller);
 				if (execve(find_path(env, tok_s[0]), tok_s, NULL) == EOF)
 				{
 					write(STDOUT_FILENO, err_msg, 26);
