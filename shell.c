@@ -18,9 +18,9 @@ int main(int ac, char *av[], char *env[])
 
 	while (controller != EOF)
 	{
+		signal(SIGINT, sig_hand);
 		if (isatty(STDIN_FILENO))
 			_prompt(ac);
-
 		controller = getline(&line, &buf, stdin);
 		exit_control(line, controller);
 		tok_s = _strtok(line);

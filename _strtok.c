@@ -35,4 +35,5 @@ char **_strtok(char *s)
 	tokens[i] = NULL;
 
 	return (tokens);
+	free(tokens);
 }

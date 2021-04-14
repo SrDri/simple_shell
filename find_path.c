@@ -42,12 +42,12 @@ char *find_path(char **env, char *cmd)
 
 		tok_beg = tok_end + 1; /* separator */
 		tok_end = find_strseq(path, ":", tok_beg);
-
 		get_strseq(path, tok_beg, tok_end, &tok);
-
 		_strcpy(bin, tok);
 		_strcat(bin, "/");
 		_strcat(bin, cmd);
 	}
 	return (bin);
+	free(tok);
+	free(bin);
 }
