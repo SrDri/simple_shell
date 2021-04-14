@@ -16,9 +16,9 @@ void exit_control(char *line, ssize_t controller)
 		exit(0);
 	}
 
-	if (controller == EOF)
+	if (line[controller - 1])
 	{
-		write(1, "\n", 1);
+		_putchar('\n');
 		exit(0);
 	}
 }

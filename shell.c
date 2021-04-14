@@ -10,19 +10,19 @@
 
 int main(int ac, char *av[], char *env[])
 {
-	ssize_t controller = 0;
+	/*ssize_t controller = 0;*/
 	size_t buf;
 	char *line = NULL, *err_msg = "No such file or directory\n";
 	char **tok_s = NULL;
 	pid_t frk;
 
-	while (controller != EOF)
+	while (true)
 	{
 		if (isatty(STDIN_FILENO))
 			_prompt(ac);
 
-		controller = getline(&line, &buf, stdin);
-		exit_control(line, controller);
+		getline(&line, &buf, stdin);
+		exit_control(line, buf);
 		tok_s = _strtok(line);
 		if (_strcmp(tok_s[0], "env", 0, 2))
 			print_env(env);
