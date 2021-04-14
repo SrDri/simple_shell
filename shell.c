@@ -10,36 +10,37 @@
 
 int main(int ac, char *av[], char *env[])
 {
-	/*ssize_t controller = 0;*/
+	ssize_t controller = 0;
 	size_t buf;
 	char *line = NULL, *err_msg = "No such file or directory\n";
 	char **tok_s = NULL;
 	pid_t frk;
 
-	while (true)
+	while (controller != EOF)
 	{
 		if (isatty(STDIN_FILENO))
 			_prompt(ac);
 
-		getline(&line, &buf, stdin);
-		exit_control(line, buf);
+		controller = getline(&line, &buf, stdin);
+		exit_control(line, controller);
 		tok_s = _strtok(line);
-		if (_strcmp(tok_s[0], "env", 0, 2))
-			print_env(env);
 		frk = fork();
 		if (frk < 0)
 			return (-1);
 
-		if (frk == 0)
+		if (!env_built(tok_s[0], env))
 		{
-			if (execve(find_path(env, tok_s[0]), tok_s, NULL) == EOF)
+			if (frk == 0)
 			{
-				write(STDOUT_FILENO, err_msg, 26);
-				return (-1);
+				if (execve(find_path(env, tok_s[0]), tok_s, NULL) == EOF)
+				{
+					write(STDOUT_FILENO, err_msg, 26);
+					return (-1);
+				}
 			}
+			else
+				wait(NULL);
 		}
-		else
-			wait(NULL);
 	}
 	(void)av;
 	free(line);
