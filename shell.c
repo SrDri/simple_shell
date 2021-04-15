@@ -27,19 +27,19 @@ int main(int ac, char *av[], char *env[])
 		if (!env_built(tok_s[0], env))
 		{
 			frk = fork();
+			wait(NULL);
 			if (frk < 0)
 				return (-1);
 			if (frk == 0)
-			{
 				proce_frk(tok_s, env, line, &st, err_msg);
-			}
 			else
-				wait(NULL);
+			{
+				if (!isatty(STDIN_FILENO))
+					exit_control(line, controller);
+			}
 			free(tok_s);
 		}
 	}
 	(void)av;
-	free(line);
-	free(tok_s);
 	return (0);
 }

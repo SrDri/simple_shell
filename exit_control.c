@@ -12,7 +12,7 @@ void exit_control(char *line, ssize_t controller)
 	{
 		free(line);
 		line = NULL;
-		write(STDOUT_FILENO, "\n", 1);
+		/*write(STDOUT_FILENO, "\n", 1);*/
 		exit(0);
 	}
 
