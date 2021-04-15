@@ -29,5 +29,8 @@ int find_strseq(const char *s, const char *sep, int idx);
 bool env_built(char *s, char *env[]);
 void print_env(char **env);
 void sig_hand(int sig_num);
+int num_words(char *sentence);
+
+void proce_frk(char **tok, char **env, char *cmd, struct stat *st, char *err);
 
 #endif /* _SHELL_H_ */

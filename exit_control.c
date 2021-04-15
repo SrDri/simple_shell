@@ -8,17 +8,18 @@
 
 void exit_control(char *line, ssize_t controller)
 {
-	if (_strcmp(line, "exit", 0, 3))
+	if (controller == EOF)
 	{
-		if (controller == EOF)
-			write(1, "\n", 1);
-
+		free(line);
+		line = NULL;
+		write(STDOUT_FILENO, "\n", 1);
 		exit(0);
 	}
 
-	if (controller == EOF)
+	if (_strcmp(line, "exit", 0, 3))
 	{
-		write(1, "\n", 1);
+		free(line);
+		line = NULL;
 		exit(0);
 	}
 }

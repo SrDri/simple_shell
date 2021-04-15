@@ -9,11 +9,11 @@
 char **_strtok(char *s)
 {
 	unsigned int i;
-	char *token;
+	char *token = NULL;
 	char **tokens = NULL;
-	const unsigned int len = _strlen(s);
+	/*const unsigned int len = _strlen(s);*/
 
-	tokens = malloc(len * sizeof(char *));
+	tokens = malloc((num_words(s) + 1) * sizeof(char *));
 	if (tokens == NULL)
 		return (NULL);
 
@@ -22,12 +22,7 @@ char **_strtok(char *s)
 	i = 0;
 	while (token)
 	{
-		tokens[i] = malloc(_strlen(token) * sizeof(char));
-		if (tokens == NULL)
-			return (NULL);
-
 		tokens[i] = token;
-
 		token = strtok(NULL, " \t\r\n");
 		i++;
 	}
@@ -35,5 +30,4 @@ char **_strtok(char *s)
 	tokens[i] = NULL;
 
 	return (tokens);
-	free(tokens);
 }
