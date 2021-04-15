@@ -12,15 +12,10 @@ int find_strseq(const char *s, const char *sep, int idx)
 {
 	int i = 0;
 
-	/* form the array of 2 elements */
-	/* 0: 1st separator */
-	/* 1: separator next to it */
-
 	while (sep[i])
 	{
 		while (s[idx])
 		{
-			/* printf("sep[i]: %c, s[idx]: %c\n", sep[i], s[idx]); */
 			if (s[idx] == sep[i])
 				return (idx);
 

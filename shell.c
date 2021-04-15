@@ -26,7 +26,7 @@ int main(int ac, char *av[], char *env[])
 
 		if (!env_built(tok_s[0], env))
 		{
-            exit_control(line, controller);
+			exit_control(line, controller);
 			frk = fork();
 			if (frk < 0)
 				return (-1);
@@ -44,5 +44,6 @@ int main(int ac, char *av[], char *env[])
 	}
 	(void)av;
 	free(line);
+	free(tok_s);
 	return (0);
 }

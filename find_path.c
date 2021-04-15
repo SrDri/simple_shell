@@ -48,6 +48,4 @@ char *find_path(char **env, char *cmd)
 		_strcat(bin, cmd);
 	}
 	return (bin);
-	free(tok);
-	free(bin);
 }
